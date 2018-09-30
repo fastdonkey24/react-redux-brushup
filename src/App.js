@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Ninjas from './components/Ninjas';
+import Gnomes from './components/Gnomes';
 
 
 class App extends Component {
   render() {
-    const ninjas = [
+    const gnomes = [
       { id : 1, name : "Harry", age : "5"},
       { id : 2, name : "Marry", age : "6"},
       { id : 3, name : "Larry", age : "3"},
@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <h3> Welcome</h3>
-        <Ninjas ninjasList={ninjas} />
+        <Gnomes gnomesList={gnomes} />
       </div>
     );
   }
