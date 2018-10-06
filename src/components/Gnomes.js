@@ -1,6 +1,7 @@
 import React from 'react';
+import '../styles/Gnomes.css';
 
-const Gnomes = ({ gnomesList}) => {
+const Gnomes = ({ gnomesList, deleteGnome}) => {
 	return (
 		<div>
 			{gnomesList.map(gnome => {
@@ -8,6 +9,7 @@ const Gnomes = ({ gnomesList}) => {
 					<div key={gnome.id} id={"gnome_" + gnome.id} >
 						<p> Name : {gnome.name}</p>
 						<p> Age : {gnome.age}</p>
+						<button onClick={() => { deleteGnome(gnome.id)} }> Remove</button>
 					</div>
 				) : null
 			})}

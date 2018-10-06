@@ -21,7 +21,7 @@ class AddGnome extends React.Component{
     return(
       <form onSubmit={this.handleSubmit}>
         <label htmlFor='Name'>Name</label>
-        <input type='text' id='name' onChange={this.handleChange}/>
+        <input type='text' id='name' onChange={this.handleChange}/> <br/>
         <label htmlFor='Age'>Age</label>
         <input type='text' id='age' onChange={this.handleChange} />
         <button type='submit'> Submit </button>

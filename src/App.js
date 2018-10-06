@@ -22,13 +22,32 @@ class App extends Component {
     })
   }
 
+  deleteTheGnome = (id) => {
+    let gnomes = this.state.gnomes.filter(gnome => {
+      return gnome.id !== id
+    })
+    this.setState({
+      gnomes : gnomes
+    })
+  }
+
+  componentDidMount(){
+    console.log("Component Mounted")
+  }
+
+  componentDidUpdate(){
+    let timeStamp = new Date()
+    console.log("Component Updated ", timeStamp)
+  }
+
   render() {
 
     return (
       <div className="App">
         <h3> Welcome</h3>
+        <p> Showing Gnomes with Age > 5</p>
         <AddGnome addGnome={this.addNewGnome}></AddGnome>
-        <Gnomes gnomesList={this.state.gnomes} />
+        <Gnomes gnomesList={this.state.gnomes} deleteGnome={this.deleteTheGnome}/>
       </div>
     );
   }
