@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "author": "Toufiq (https://twitter.com/burningraven06)",
-  "private": true,
   "description" : "React Redux Brushup",
   "keywords" : ["react","reactjs","redux","react-router" ,"react-redux","javascript","es6"],
   "dependencies": {
