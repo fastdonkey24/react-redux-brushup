@@ -2,6 +2,10 @@
   "name": "react-router-example",
   "version": "0.1.0",
   "private": true,
+  "author": "Toufiq (https://twitter.com/burningraven06)",
+  "private": true,
+  "description" : "React Redux Brushup",
+  "keywords" : ["react","reactjs","redux","react-router" ,"react-redux","javascript","es6"]
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
